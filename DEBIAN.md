@@ -4,7 +4,7 @@ These instructions have been tested in Debian Buster (Testing)
 
 ## 1. Start by cloning the GIT repository:
 
-``git clone --recurse-submodules -j8 git://github.com/Stremio/stremio-shell.git``
+``git clone --recurse-submodules -j8 https://github.com/Stremio/stremio-shell.git``
 
 ## 2. Install QTCreator
 
@@ -79,7 +79,7 @@ qrc:/main.qml:12 module "Qt.labs.platform" is not installed
 
 That means you need to install:
 
-``sudo apt-get install qml-module-qtwebchannel qml-module-qt-labs-platform qml-module-qtwebengine qml-module-qtquick-dialogs qml-module-qtquick-controls qtdeclarative5-dev``
+``sudo apt-get install qml-module-qtwebchannel qml-module-qt-labs-platform qml-module-qtwebengine qml-module-qtquick-dialogs qml-module-qtquick-controls qtdeclarative5-dev qml-module-qt-labs-settings qml-module-qt-labs-folderlistmodel``
 
 Now you should be able to run it normally.
 

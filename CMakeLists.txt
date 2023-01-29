@@ -5,7 +5,7 @@ if(APPLE)
   set(HAVE_FLAG_SEARCH_PATHS_FIRST 0)
 endif()
 
-project(stremio VERSION "4.4.135")
+project(stremio VERSION "4.4.159")
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/CMakeModules/")
 
@@ -20,16 +20,16 @@ set(CMAKE_AUTOUIC ON)
 
 list(APPEND WEBENGINE_CONFIG use_proprietary_codecs)
 set(SOURCES
-  main
-  mpv
-  stremioprocess
-  screensaver
-  systemtray
-  razerchroma
-  qclipboardproxy
-  verifysig
-  mainapplication
-  autoupdater
+  main.cpp
+  mpv.cpp
+  stremioprocess.cpp
+  screensaver.cpp
+  systemtray.cpp
+  razerchroma.cpp
+  qclipboardproxy.cpp
+  verifysig.c
+  mainapplication.h
+  autoupdater.cpp
   qml.qrc
 )
 
